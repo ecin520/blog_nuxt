@@ -78,6 +78,7 @@ $mq-mobile: 736px                                   !default;
 }
 
 .global-hover:hover {
+  cursor: pointer;
   color: $theme-hover-color;
 }
 

@@ -355,6 +355,7 @@
     import {getUserById, updateUser} from "../api/user";
     import {imageUpload} from "../api/file";
     import store from "../store";
+    import {getToken} from "../utils/auth";
 
     export default {
         name: "CreateCenter.vue",
@@ -451,7 +452,8 @@
                 // this.userInfo = this.$store.getters.getUserInfo
                 getUserById(1000).then(response => {
                     this.userInfo = response.content
-                })
+                });
+
             },
             showArticleAddDialog() {
                 this.insertOrUpdate = 'insert'
@@ -769,6 +771,11 @@
                 this.recommendSwitch = false
             }
 
+        },
+        beforeCreate() {
+            if (getToken() === undefined || getToken() === null) {
+                this.$router.push('/')
+            }
         },
         created() {
             this.init()

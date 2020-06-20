@@ -103,7 +103,7 @@
             },
             scrollTop() {
                 let distance = document.documentElement.scrollTop || document.body.scrollTop;
-                let step = distance / 20;
+                let step = distance;
                 (function jump() {
                     if (distance > 0) {
                         distance -= step;

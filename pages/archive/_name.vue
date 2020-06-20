@@ -70,7 +70,7 @@
         data() {
             return {
                 current: 1,
-                pageSize: 6,
+                pageSize: 12,
                 total: null,
                 articles: [],
                 userInfo: {},
@@ -103,7 +103,7 @@
             },
             scrollTop() {
                 let distance = document.documentElement.scrollTop || document.body.scrollTop;
-                let step = distance / 20;
+                let step = distance;
                 (function jump() {
                     if (distance > 0) {
                         distance -= step;
