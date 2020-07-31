@@ -8,7 +8,7 @@
         <div class="page__content">
           <br>
           <div class="archive-div">
-            <a @click="yearClick(item)" :style="item === year ? 'color: rgb(66, 185, 131)' : ''" v-for="(item, index) in years" :key="index" class="archive-time">
+            <a @click="yearClick(item)" :style="item === year ? 'color: #4183c4' : ''" v-for="(item, index) in years" :key="index" class="archive-time">
               {{item}}
             </a>
           </div>
@@ -166,7 +166,7 @@
     }
 
     .archive-time:hover {
-      color: $theme-color;
+
     }
 
   }

@@ -5,7 +5,7 @@
       <p></p>
       <div class="page__container page__main">
 
-        <div class="page__content article__content">
+        <div class="page__content article__content" >
           <br>
 
           <h1 class="article-title">{{article.title}}</h1>

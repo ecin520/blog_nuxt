@@ -30,7 +30,7 @@
           <p><a href="https://cn.vuejs.org/" target="_blank">Vue官方文档</a></p>
           <p><a href="https://flutterchina.club/" target="_blank">Flutter</a></p>
           <p><a href="https://material.io/" target="_blank">Material</a></p>
-          <p><a href="http://www.pytap.com/resume" target="_blank">我的简历</a></p>
+          <p><a href="http://www.pytap.com/resume/index.html" target="_blank">我的简历</a></p>
         </div>
 
         <div class="footer-content-item">
@@ -50,7 +50,7 @@
         <div>
           <p style="margin: 10px;font-size: 12px;line-height: 40px;">
             <span class="">© 2019 · Ecin520 版权所有</span>
-            <span class="">赣ICP备20002573号</span>
+            <span class="">ICP证：<a href="http://www.beian.miit.gov.cn/" target="_blank">赣ICP备20002573号-1</a> </span>
           </p>
         </div>
         <div>

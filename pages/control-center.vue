@@ -1,18 +1,19 @@
 <template>
   <div>
-    <div class="navbar">
-      <div @click="toHome" class="logo">
-        <mu-icon size="40" value="flash_on"></mu-icon>
-      </div>
-      <div class="navbar-item-style">
-        <div>
-          <span @click="toHome" class="navbar-item">首页</span>
-          <span @click="toArchive" class="navbar-item">归档</span>
-          <span @click="toAbout" class="navbar-item">关于</span>
-          <span @click="toCreate" class="navbar-item">创作</span>
-        </div>
-      </div>
-    </div>
+<!--    <div class="navbar">-->
+<!--      <div @click="toHome" class="logo">-->
+<!--        <mu-icon size="40" value="flash_on"></mu-icon>-->
+<!--      </div>-->
+<!--      <div class="navbar-item-style">-->
+<!--        <div>-->
+<!--          <span @click="toHome" class="navbar-item">首页</span>-->
+<!--          <span @click="toArchive" class="navbar-item">归档</span>-->
+<!--          <span @click="toAbout" class="navbar-item">关于</span>-->
+<!--          <span @click="toCreate" class="navbar-item">创作</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <Header></Header>
 
     <!-- 主页展示卡片 -->
     <div class="control-card">
@@ -54,11 +55,11 @@
                 </mu-flex>
               </div>
             </div>
-            <br><br><br><br><br><br>
+            <br><br><br>
             <mu-flex justify-content="center">
               <mu-button @click="logoutClick" color="error">退出登录</mu-button>
             </mu-flex>
-            <br><br><br>
+            <br>
           </mu-card-text>
           <br>
         </mu-card>
@@ -356,9 +357,11 @@
     import {imageUpload} from "../api/file";
     import store from "../store";
     import {getToken} from "../utils/auth";
+    import Header from "../components/Header";
 
     export default {
         name: "CreateCenter.vue",
+        components: {Header},
         data() {
             return {
                 current: 1,
@@ -849,7 +852,7 @@
 
       .card-title {
         background: $theme-color;
-        color: white;
+        color: $theme-text-color;
         padding: 30px;
         text-align: center;
       }

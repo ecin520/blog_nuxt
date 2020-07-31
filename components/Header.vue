@@ -125,6 +125,7 @@
   @import "../assets/css/index";
   .navbar {
     position: fixed;
+    /*box-shadow: 0 1px 5px #d9d7d7;*/
     top: 0;
     background: $theme-color;
     display: block;

@@ -6,15 +6,16 @@ $theme-widget-color: #4183c4;
 
 //$theme-color: linear-gradient(to right, #00acc1, #00838f);
 
-//$theme-color: #283337;
 $theme-color: #4183c4;
+//$theme-color: white;
 //$theme-color: linear-gradient(to right, #607d8b, #455a64);
 
-$theme-text-color: white;
+//$theme-text-color: #4183c4;
 
 $theme-hover-color: $theme-widget-color;
 
-$bar-color-hover: rgba(255, 255, 255, .5);
+//$bar-color-hover: rgba(255, 255, 255, .5);
+$bar-color-hover: #7fdc14;
 //$bar-color-hover: #42b983;
 
 $bottom1-color: #263136;
@@ -23,7 +24,7 @@ $bottom2-color: #313a40;
 $side-bar-color: #4183c4;
 $side-bar-color-light: rgb(131, 198, 167);
 //$theme-color: #dd8c36;
-//$theme-text-color: white;
+$theme-text-color: white;
 //$theme-hover-color: #dae7da;
 //$bottom1-color: #263136;
 //$bottom2-color: #313a40;
@@ -87,6 +88,7 @@ $mq-mobile: 736px                                   !default;
 /* 以下是布局scss */
 body {
 
+  //background: rgb(247, 249, 250) !important;
   background: white !important;
 
   @media screen and (min-width: $mq-mobile) {
@@ -190,6 +192,7 @@ body {
 
 .page__main {
   display: flex;
+  top: 20px;
   flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -222,7 +225,9 @@ body {
 .navbar-top {
   position: relative;
   background: $theme-color;
+  //background: rgb(238, 240, 243);
   height: 350px;
+  //display: none;
 
   .navbar-top-content {
     text-align: center;
